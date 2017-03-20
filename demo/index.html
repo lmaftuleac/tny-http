@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="../node_modules/light-ng/index.min.js"></script>
+        <script src="../src/http-error-handler.provider.js"></script>
+        <script src="../src/http-headers.provider.js"></script>
+        <script src="../src/http-interceptors.provider.js"></script>
+        <script src="../src/http-json-interceptor.provider.js"></script>        
+        <script src="../src/http-include-interceptors.js"></script>        
+        <script src="../src/http.service.js"></script>
+        
+    </head>
+    <body>
+
+        <script>
+        
+lightNg('app')
+    
+    .include('http')
+
+    .run(['$http',function($http) {
+
+        $http.send({
+            url : 'https://reqres.in/api/users',
+            method : "POST",
+            data : {
+                "name": "morpheus",
+                "job": "leader"
+            },
+            async : true,
+            callback : function(data){
+                console.log(data);
+            },
+            error : function(err) {
+                console.log(err);
+            }
+        });
+
+        $http.send({
+            url : 'https://reqres.in/api/users?page=2',
+            method : "GET",
+            data : {
+                "name": "morpheus",
+                "job": "leader"
+            },
+            async : true,
+            callback : function(data){
+                console.log(data);
+            },
+            error : function(err) {
+                console.log(err);
+                return false;
+            }
+        });
+
+    }])
+    
+.build();
+;
+        
+        </script>
+        
+    </body>
+</html>

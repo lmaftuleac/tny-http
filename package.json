@@ -1,0 +1,31 @@
+{
+  "name": "light-ng-http",
+  "version": "1.0.0",
+  "description": "http service for light-ng framework, for browsers only",
+  "main": "index.min.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lmaftuleac/light-ng-http.git"
+  },
+  "keywords": [
+    "light-ng",
+    "http",
+    "module"
+  ],
+  "author": "Liviu Maftuleac",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lmaftuleac/light-ng-http/issues"
+  },
+  "homepage": "https://github.com/lmaftuleac/light-ng-http#readme",
+  "devDependencies" :{
+    "light-ng" : "2.0.0",
+    "gulp": "^3.9.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^1.5.1",
+    "gulp-concat": "^2.6.0"
+  }
+}
