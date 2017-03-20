@@ -12,12 +12,14 @@ lightNg('http')
 
         function post(response, options, xhr) {
             var output;
-            try {
-                output = JSON.parse(response);
-            } catch(e){
-                //erorr
+            if (options.dataType.toUpperCase() === 'JSON') {
+                try {
+                    output = JSON.parse(response);
+                } catch(e){
+                    //erorr
+                }
             }
-            return output || responce;
+            return output || response;
         }
 
         return function(){

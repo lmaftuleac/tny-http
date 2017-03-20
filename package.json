@@ -1,6 +1,6 @@
 {
   "name": "light-ng-http",
-  "version": "1.0.0",
+  "version": "2.0.1",
   "description": "http service for light-ng framework, for browsers only",
   "main": "index.min.js",
   "scripts": {
