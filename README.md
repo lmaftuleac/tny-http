@@ -1,5 +1,5 @@
 # light-ng-http
-http service for light-ng framework
+http service for [light-ng](https://github.com/lmaftuleac/light-ng) framework
 
 ## How to use
 
