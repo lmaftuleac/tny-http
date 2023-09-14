@@ -1,5 +1,5 @@
 
-lightNg('http')
+Tny('http')
 
     .factory('$httpJsonInterceptor', ['$$httpInterceptors',function($$httpInterceptors) {
 

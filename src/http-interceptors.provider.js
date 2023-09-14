@@ -1,5 +1,5 @@
 
-lightNg('http')
+Tny('http')
 
     .provider('$$httpInterceptors', function(){
 

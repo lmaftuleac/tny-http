@@ -1,10 +1,11 @@
 {
-  "name": "light-ng-http",
-  "version": "2.0.1",
+  "name": "tny-http",
+  "version": "1.0.1",
   "description": "http service for light-ng framework, for browsers only",
   "main": "index.min.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "gulp": "gulp"
   },
   "repository": {
     "type": "git",
@@ -21,11 +22,11 @@
     "url": "https://github.com/lmaftuleac/light-ng-http/issues"
   },
   "homepage": "https://github.com/lmaftuleac/light-ng-http#readme",
-  "devDependencies" :{
-    "light-ng" : "2.0.0",
-    "gulp": "^3.9.0",
-    "gulp-rename": "^1.2.2",
-    "gulp-uglify": "^1.5.1",
-    "gulp-concat": "^2.6.0"
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-rename": "^2.0.0",
+    "gulp-uglify": "^3.0.2",
+    "tny": "^1.0.5"
   }
 }

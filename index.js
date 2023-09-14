@@ -1,4 +1,4 @@
-lightNg('http')
+Tny('http')
 
     .provider('$$httpErrorHandler', function() {
         function errorHandler(xhr) {
@@ -7,7 +7,7 @@ lightNg('http')
 
         return {
             set : function(fn) {
-                errorHandler = fn || lightNg.noop;
+                errorHandler = fn || Tny.noop;
             },
             get : function() {
                 return errorHandler;
@@ -17,7 +17,7 @@ lightNg('http')
 
 ;
 
-lightNg('http')
+Tny('http')
 
     .provider('$$httpHeaders',function(){
         var headers = {
@@ -35,7 +35,7 @@ lightNg('http')
 
 ;
 
-lightNg('http')
+Tny('http')
 
     .provider('$$httpInterceptors', function(){
 
@@ -72,7 +72,7 @@ lightNg('http')
 
 ;
 
-lightNg('http')
+Tny('http')
 
     .factory('$httpJsonInterceptor', ['$$httpInterceptors',function($$httpInterceptors) {
 
@@ -106,7 +106,7 @@ lightNg('http')
 
 ;
 
-lightNg('http')
+Tny('http')
 
 
     .service('$http', ['$$httpHeaders', '$$httpInterceptors', '$$httpErrorHandler', function($$httpHeaders, $$httpInterceptors, $$httpErrorHandler) {
@@ -189,8 +189,8 @@ lightNg('http')
         this.send = function(userOpts) {
             var options = {};
             var defaults = {
-                callback : lightNg.noop,
-                error : lightNg.noop,
+                callback : Tny.noop,
+                error : Tny.noop,
                 method : 'GET',
                 data : "",
                 async : true,
@@ -231,7 +231,7 @@ lightNg('http')
         };
 
     }]);
-lightNg('http')
+Tny('http')
 
     .run(['$httpJsonInterceptor',function($httpJsonInterceptor){
         $httpJsonInterceptor();

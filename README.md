@@ -1,10 +1,10 @@
-# light-ng-http
-http service for [light-ng](https://github.com/lmaftuleac/light-ng) framework
+# Tny-http
+http service for [Tny](https://github.com/lmaftuleac/tny) framework
 
 ## How to use
 
 ```
-lightNg('app')
+Tny('app')
     
     .include('http')
 

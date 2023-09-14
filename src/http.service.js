@@ -1,5 +1,5 @@
 
-lightNg('http')
+Tny('http')
 
 
     .service('$http', ['$$httpHeaders', '$$httpInterceptors', '$$httpErrorHandler', function($$httpHeaders, $$httpInterceptors, $$httpErrorHandler) {
@@ -82,8 +82,8 @@ lightNg('http')
         this.send = function(userOpts) {
             var options = {};
             var defaults = {
-                callback : lightNg.noop,
-                error : lightNg.noop,
+                callback : Tny.noop,
+                error : Tny.noop,
                 method : 'GET',
                 data : "",
                 async : true,

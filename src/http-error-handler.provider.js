@@ -1,4 +1,4 @@
-lightNg('http')
+Tny('http')
 
     .provider('$$httpErrorHandler', function() {
         function errorHandler(xhr) {
@@ -7,7 +7,7 @@ lightNg('http')
 
         return {
             set : function(fn) {
-                errorHandler = fn || lightNg.noop;
+                errorHandler = fn || Tny.noop;
             },
             get : function() {
                 return errorHandler;
