@@ -1,6 +1,6 @@
 {
   "name": "tny-http",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "http service for light-ng framework, for browsers only",
   "main": "index.min.js",
   "scripts": {

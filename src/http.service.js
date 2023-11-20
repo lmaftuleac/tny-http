@@ -114,8 +114,8 @@ Tny('http')
             xhr.open(options.method, options.url, options.async);
 
             applyPreInterceptors(options, xhr);
-            setHeaders($$httpHeaders.getHeaders());
-            setHeaders(options.headers);
+            setHeaders(xhr, $$httpHeaders.getHeaders());
+            setHeaders(xhr, options.headers);
 
             handleResponse(options, xhr);
 
